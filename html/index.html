@@ -5,49 +5,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec81124df3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="../js/script.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-<div class="header">
-    <div class="container">
-        <div class="header__inner">
-            <div class="header__logo">LAMBDA</div>
-            <nav class="header__menu">
-                <a class="header__item">Home</a>
-                <a class="header__item">About</a>
-                <a class="header__item">Ingredients</a>
-                <a class="header__item">Menu</a>
-                <a class="header__item">Reviews</a>
-                <a class="header__item">Reservation</a>
-            </nav>
+    <div class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="#">LAMBDA</a>
+                <nav class="header__menu">
+                    <div class="header__container">
+                        <a class="header__item active" href="#">Home</a>
+                        <a class="header__item" href="#">About</a>
+                        <a class="header__item" href="#">Igredients</a>
+                        <a class="header__item" href="#">Menu</a>
+                        <a class="header__item" href="#">Reviews</a>
+                        <a class="header__item" href="#">Reservations</a>
+                    </div>
+                    <div class="icons__container">
+                        <a class="fab fa__item fa-twitter" href="#"></a>
+                        <a class="fab fa__item fa-youtube"></a>
+                        <a class="fab fa__item fa-facebook-f" href="#"></a>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="intro">
-    <div class="container">
-        <div class="intro__inner">
-            <h1 class="intro__title">the right ingredients for the right food</h1>
-        </div>
-        <div class="divider"></div>
-        <div class="buttons__container">
-            <div class="button__black">book a table</div>
-            <div class="button__white">set the menu</div>
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">the right ingredients for the right food</h1>
+            </div>
+            <div class="divider"></div>
+            <div class="buttons__container">
+                <div class="button__black">book a table</div>
+                <div class="button__white">see the menu</div>
+            </div>
         </div>
     </div>
-</div>
-<div class="about">
-    <div class="quote__container">
-        <div class="quote__title">Just the right food</div>
-        <div class="dish__container"></div>
+    <div class="about">
+        <div class="dish__container">
+            <div class="quote__container">
+                <h1 class="quote__title">Just the right food</h1>
+                <div class="dish__divider"></div>
+                <h1 class="quote__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps
+                    our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda
+                    cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+                </h1>
+                <div class="cook"></div>
+            </div>
+        </div>
     </div>
-</div>
-
+    <div class="ingredients">
+        <div class="ingredients__container">
+            <h1 class="ingredients__header">Fine ingredients</h1>
+            <div class="dish__divider"></div>
+            <h1 class="ingredients__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what
+                keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda
+                cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</h1>
+            <div id='ingredient__container' class="ingredient__container">
+                <div class="ingredient__circle">
+                    <div class="ingredient-spica"></div>
+                </div>
+                <div class="ingredient__circle">
+                    <div class="ingredient-paprika"></div>
+                </div>
+                <div class="ingredient__circle">
+                    <div class="ingredient-bread"></div>
+                </div>
+                <!-- <div class="check__container">
+                    <div class="fas fa__text fa-check">Canary grass</div>
+                    <i class="fas fa__text fa-check">Whole Grain Stamp</i>
+                    <i class="fas fa__text fa-check">Dactyloctenium aegyptium</i>
+                    <i class="fas fa__text fa-check">Algal food ingredients</i>
+                    <i class="fas fa__text fa-check">Fermented bean paste</i>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- TODO ingredients -->
+    <div class="menu">
+        <div class="column">
+            <div class="menu__group">
+                Appetisers
+                <div class="dish__divider"></div>
+                <div class="item__price_container">
+                    <div class="item">Tzatsiki</div>
+                    <div class="price">$3.99</div>
+                </div>
+                <h1 class="item__text">Refreshing traditional cucumber and garlic yoghurt dip.</h1>
+                <div class="item__price_container">
+                    <div class="item">Aubergine Salad</div>
+                    <div class="price">$5.50</div>
+                </div>
+                <h1 class="item__text">Pureed eggplant, garlic, green pepper and tomato dip.</h1>
+                <div class="item__price_container">
+                    <div class="item">Aubergine Salad</div>
+                    <div class="price">$5.25</div>
+                </div>
+                <h1 class="item__text">Pureed eggplant, garlic, green pepper and tomato dip.</h1>
+                <div class="menu__group">
+                    Salads
+                    <div class="dish__divider"></div>
+                    <div class="dish">
+                        <div class="item__price_container">
+                            <div class="item">Olive Special</div>
+                            <div class="price">$5.99</div>
+                        </div>
+                        <h1 class="item__text">Refreshing traditional cucumber and garlic yoghurt dip.</h1>
+                    </div>
+                    <div class="special">special</div>
+                    <div class="special__container">
+                        <div class="dish">
+                            <div class="item__price_container">
+                                <div class="item">Greek Salad</div>
+                                <div class="price">$5.50</div>
+                            </div>
+                            <h1 class="item__text">Pureed eggplant, garlic, green pepper and tomato dip.</h1>
+                        </div>
+                    </div>
+                    <div class="item__price_container">
+                        <div class="item">Gusto Salad</div>
+                        <div class="price">$5.25</div>
+                    </div>
+                    <h1 class="item__text"> Refreshing traditional cucumber and garlic yoghurt dip.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="menu__group">
+                Starters
+                <div class="dish__divider"></div>
+                <div class="item__price_container">
+                    <div class="item">Haloumi</div>
+                    <div class="price">$3.99</div>
+                </div>
+                <h1 class="item__text">Refreshing traditional cucumber and garlic yoghurt dip.</h1>
+                <div class="item__price_container">
+                    <div class="item">Spinach Pie</div>
+                    <div class="price">$5.50</div>
+                </div>
+                <h1 class="item__text">Pureed eggplant, garlic, green pepper and tomato dip.</h1>
+                <div class="menu__group">
+                    Main Dishes
+                    <div class="dish__divider"></div>
+                    <div class="item__price_container">
+                        <div class="item">Cornish Mackerel</div>
+                        <div class="price">$5.99</div>
+                    </div>
+                    <h1 class="item__text">Pureed eggplant, garlic, green pepper and tomato dip.</h1>
+                    <div class="item__price_container">
+                        <div class="item">Roast Lamb</div>
+                        <div class="price">$5.50</div>
+                    </div>
+                    <h1 class="item__text">Pureed eggplant, garlic, green pepper and tomato dip.</h1>
+                    <div class="item__price_container">
+                        <div class="item">Fried Chicken</div>
+                        <div class="price">$5.25</div>
+                    </div>
+                    <h1 class="item__text">Pureed eggplant, garlic, green pepper and tomato dip.</h1>
+                    <div class="item__price_container">
+                        <div class="item">Pastitsio</div>
+                        <div class="price">$5.99</div>
+                    </div>
+                    <h1 class="item__text"> Refreshing traditional cucumber and garlic yoghurt dip.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="reviews__container">
+            <div class="hooks">“</div>
+            <h1 class="reviews__title">Guest Reviews</h1>
+            <div class="dish__divider"></div>
+            <div class="reviews__text">
+                If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+            </div>
+            <h1 class="reviews__signature">
+                - food inc, New York
+            </h1>
+        </div> 
+    </div>
+    <div class="reservation">
+        <div class="reservation__container">
+            <div class="res__image">
+                <img src="../images/reservation/reservation_1.png" alt="">
+            </div>
+            <div class="res__image">
+                <img src="../images/reservation/reservation_2.png" alt="">
+            </div>
+        </div>
+        <div class="reservation__container">
+            <h1 class="reservation__title">Just the right food</h1>
+            <div class="dish__divider"></div>
+            <div class="reservation__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.</div>
+            <div class="reservation__text">Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</div>
+            <a class="reservation__button" href="#">Book now!</a>
+        </div>
+    </div>
 </body>
 
 </html>
