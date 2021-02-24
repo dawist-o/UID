@@ -14,6 +14,7 @@ h5,
 h6 {
     margin: 0 auto;
     text-decoration: none;
+    font-weight: 100;
 }
 
 *,
@@ -320,15 +321,17 @@ h6 {
 .menu{
     background: url(../images/menu/menu_background.png) center no-repeat;
     height: 994px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     display: flex;
+    padding: 0 130px;
+    padding-bottom: 35px;
 }
 
 .menu__group{
     display: inline-block;
-    width: 430px;
-    margin-top: 33px;
+    width: 455px;
+    margin-top: 50px;
     font-weight: 100;
     font-family: 'Yeseva One', cursive;
     color: #cc9900;
@@ -336,15 +339,59 @@ h6 {
     text-align: center;
 }
 
-.item__price_container{
+.menu__divider{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.order__container{
+    width: 455px;
+    height: 100px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.special__label{
+    width: 69px;
+    height: 21px;
+    align-self: flex-end;
+    background-color: #cc9900;
+    color: white;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.special{
+    border: 1px solid #cc9900;
+}
+
+.order__inner .special{
+    border: 1px solid #cc9900;
+}
+
+.order__inner{
+    width: 455px;
+    height: 80px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order__price{
+    display: inline-flex;
     justify-content: space-between;
     font-size: 21px;
     border-bottom: 1px solid #cc9900;
-    padding-bottom: 7px;
+    width: 430px;
+    height: 35px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
 }
 
-.item{
+.name{
     display: inline;
 }
 
@@ -352,21 +399,17 @@ h6 {
     display: inline;
 }
 
-.item__text{
-    /* margin-top: 15px;
-     margin-bottom: 30px; */
+.order__description{
     font-size: 16px;
     font-weight: 100;
     font-family: 'Lato', sans-serif;
     color: black;
-    text-align: left;
+    display: flex;
+    width: 430px;
 }
 
 .column{
-    align-items: center;
-    display: flex;
-    width: 600px;
-    justify-content: center;
+    width: 455px
 }
 
 .dish{
@@ -381,18 +424,6 @@ h6 {
     height: 81px;
     border: 1px solid #cc9900;
     display: block;
-}
-
-.special{
-    position: relative;
-    margin-left: 386px;
-    color: white;
-    font-size: 14px;
-    font-weight: 100;
-    font-family: 'Lato', sans-serif;
-    width: 69px;
-    height: 21px;
-    background-color: #cc9900;
 }
 
 .reviews{
@@ -449,7 +480,6 @@ h6 {
     height: 710px;
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
 }
 .reservation__container{
     /* display: flex;
@@ -491,4 +521,55 @@ h6 {
     color: white;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
+}
+
+.footer{
+    background: black;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 56px;
+    padding-right: 215px;
+    padding-left: 215px;
+}
+
+.footer .column .dish__divider{
+    transform: scale(0.7);
+    height: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.footer__column{
+    font-family: 'Yeseva One', cursive;
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    display: inline;
+    width: 370px;
+}
+
+.footer__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer__icon{
+    transform: scale(0.85);
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    transition: opacity 1.5s linear;
+}
+
+.footer__icon:hover{
+    color: #cc9900;
+}
+
+.footer__icons__container{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 80px;
 }
