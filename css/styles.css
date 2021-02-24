@@ -553,6 +553,7 @@ h6 {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     text-align: center;
+    line-height: 1.6;
 }
 
 .footer__icon{
@@ -561,6 +562,10 @@ h6 {
     color: white;
     opacity: 1;
     transition: opacity 1.5s linear;
+}
+
+.footer__divider{
+    margin-bottom: 5px;
 }
 
 .footer__icon:hover{
