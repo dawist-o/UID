@@ -512,6 +512,7 @@ h6 {
 }
 
 .reservation__button{
+    margin-top: 30px;
     background: #cc9900;
     text-decoration: none;
     display: inline-block;
@@ -577,4 +578,44 @@ h6 {
     justify-content: space-between;
     margin-top: 50px;
     width: 80px;
+}
+
+.reservation__fields{
+    width: 430px;
+    display: flex;
+    justify-content: center;
+}
+
+.input__column{
+    float:left;
+}
+
+.column__divider{
+    float: left;
+    width: 30px;
+}
+
+.input__label{
+    text-align: start;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color:#dab33e;
+}
+
+.input__field{
+    height: 36px;
+    width: 200px;
+    border-width: 2px;
+    border-color: #c8c6c6;
+    align-self: flex-start;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    padding: 14px;
+}
+
+.input__field:focus{
+    border-color:#dab33e;
 }
