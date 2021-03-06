@@ -262,7 +262,8 @@
                     <div class="input__item">
                         <h1 class="input__label">Date</h1>
                         <form>
-                            <input class = "input__field" type="date" placeholder="date *" required>
+                            <input class = "input__field" placeholder="date *"  onfocus="(this.type='date')"
+                            onblur="(this.type='text')" required>
                         </form>
                     </div>
                 </div>
