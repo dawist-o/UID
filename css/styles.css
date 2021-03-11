@@ -182,10 +182,9 @@ h6 {
 
 
 .about{
-    background: url("../images/about/about_background.jpg");
+    background: url("../images/about/about_background.jpg") center no-repeat;
     height: 710px;
-    width: 1600px;
-    display: inline-flex;
+    display: flex;
 }
 
 .quote__container{
@@ -225,7 +224,6 @@ h6 {
 .dish__container{
     background: url(../images/about/dish.png) center no-repeat;
     width: 100%;
-    height: 710px;
 }
 
 .ingredients{
@@ -262,7 +260,7 @@ h6 {
 
 
 .ingredient__container{
-    display: inline-block;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
     width: 390px;
@@ -476,15 +474,21 @@ h6 {
 }
 
 .reservation{
-    background: url("../images/about/about_background.jpg");
+    background: url("../images/about/about_background.jpg") center no-repeat;
     height: 710px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
+.reservation__images{
+    width: 570px;
+    margin-right: 35px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
 .reservation__container{
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     width: 570px;
     text-align: center;
 }
@@ -577,17 +581,13 @@ h6 {
     display: inline-flex;
     justify-content: space-between;
     margin-top: 50px;
-    width: 80px;
+    width: 120px;
 }
 
 .reservation__fields{
-    width: 430px;
-    display: flex;
-    justify-content: center;
-}
-
-.input__column{
-    float:left;
+    display: inline-flex;
+    width: 500px;
+    justify-content: space-evenly;
 }
 
 .column__divider{
@@ -598,9 +598,11 @@ h6 {
 .input__label{
     text-align: start;
     font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 800;
-    color:#dab33e;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:#cc9900;
 }
 
 .input__field{
@@ -617,7 +619,7 @@ h6 {
 }
 
 .input__field:focus{
-    border-color:#dab33e;
+    border-color:#cc9900;
 }
 
 .input__field:not(:placeholder-shown):not(:focus):invalid{
