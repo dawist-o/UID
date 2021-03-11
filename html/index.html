@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ec81124df3.js" crossorigin="anonymous"></script>
+    
+    <!-- style -->
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/ec81124df3.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- load jQuery BEFORE script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/script.js"></script>
-    <title>Document</title>
+    <title>Lambda</title>
 </head>
 
 <body>
@@ -23,12 +30,12 @@
                 <a class="header__logo" href="#">LAMBDA</a>
                 <nav class="header__menu">
                     <div class="header__container">
-                        <a class="header__item active" href="#">Home</a>
-                        <a class="header__item" href="#">About</a>
-                        <a class="header__item" href="#">Igredients</a>
-                        <a class="header__item" href="#">Menu</a>
-                        <a class="header__item" href="#">Reviews</a>
-                        <a class="header__item" href="#">Reservations</a>
+                        <a class="header__item" href="#intro">Home</a>
+                        <a class="header__item" href="#about">About</a>
+                        <a class="header__item" href="#ingredients">Igredients</a>
+                        <a class="header__item" href="#menu">Menu</a>
+                        <a class="header__item" href="#reviews">Reviews</a>
+                        <a class="header__item" href="#reservation">Reservations</a>
                     </div>
                     <div class="icons__container">
                         <a class="fab fa__item fa-twitter" href="#"></a>
@@ -39,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <h1 class="intro__title">the right ingredients for the right food</h1>
@@ -51,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="dish__container">
             <div class="quote__container">
                 <h1 class="quote__title">Just the right food</h1>
@@ -64,7 +71,7 @@
             </div>
         </div>
     </div>
-    <div class="ingredients">
+    <div class="ingredients" id="ingredients">
         <div class="ingredients__container">
             <h1 class="ingredients__header">Fine ingredients</h1>
             <div class="dish__divider"></div>
@@ -84,7 +91,7 @@
             </div>
         </div>
     </div>
-    <div class="menu">
+    <div class="menu" id="menu">
         <div class="column">
             <div class="menu__group">
                 Appetisers
@@ -216,7 +223,7 @@
             </div>
         </div>
     </div>
-    <div class="reviews">
+    <div class="reviews" id="reviews">
         <div class="reviews__container">
             <div class="hooks">“</div>
             <h1 class="reviews__title">Guest Reviews</h1>
@@ -231,7 +238,7 @@
             </h1>
         </div>
     </div>
-    <div class="reservation">
+    <div class="reservation" id="reservation">
         <div class="reservation__images">
             <div class="res__image">
                 <img src="../images/reservation/reservation_1.png" alt="">
@@ -263,7 +270,7 @@
                         </form>
                     </div>
                 </div>
-                <div >
+                <div>
                     <div class="input__item">
                         <h1 class="input__label">E-mail</h1>
                         <form>
