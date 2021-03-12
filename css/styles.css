@@ -605,8 +605,10 @@ h6 {
 .input__field{
     height: 36px;
     width: 200px;
-    border-width: 2px;
+    border-width: 1px;
     border-color: #c8c6c6;
+    border-style: solid;
+    background: rgba(255, 255, 255, 0.4);
     align-self: flex-start;
     outline: none;
     font-family: "Open Sans", sans-serif;
